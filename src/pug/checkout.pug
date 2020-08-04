@@ -1,0 +1,114 @@
+doctype html
+html(lang="en")
+    head
+        title Home
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        link(href="./main.min.css" type="text/css" rel="stylesheet")
+    body
+        div(class="wrapper")
+            include ./blocks/header.pug
+            div(class="container")
+                main(class="container__content")
+                    h2(class="container__heading") Оформление заказа
+                    div(class="checkout")
+                        ul(class="orders__content-list")
+                            li(class="orders__content-item")
+                                h3(class="orders__heading") Зимние шины Michelin X-Ice 3 185/65 R15 92T XL
+                                span(class="orders__bold-style")  4шт
+                                span(class="orders__bold-style")  3 762.85 руб.
+                            li(class="orders__content-item")
+                                h3(class="orders__heading") Зимние шины Michelin X-Ice 3 185/65 R15 92T XL
+                                span(class="orders__bold-style")  4шт
+                                span(class="orders__bold-style")  3 762.85 руб.
+                            li(class="orders__content-item")
+                                h3(class="orders__heading") Зимние шины Michelin X-Ice 3 185/65 R15 92T XL
+                                span(class="orders__bold-style")  4шт
+                                span(class="orders__bold-style")  3 762.85 руб.
+                            li(class="orders__content-item")
+                                h3(class="orders__heading") Зимние шины Michelin X-Ice 3 185/65 R15 92T XL
+                                span(class="orders__bold-style")  4шт
+                                span(class="orders__bold-style")  3 762.85 руб.
+                        form(class="form")
+                            div(class="form-content")
+                                ul(class="form__part")
+                                    li(class="form__item")
+                                        label(class="form__label") Имя:
+                                        input(type="text" class="form__input")
+                                    li(class="form__item")
+                                        label(class="form__label") Фамилия:
+                                        input(type="text" class="form__input")
+                                    li(class="form__item")
+                                        label(class="form__label") Телефон:
+                                        input(type="text" class="form__input")
+                                    li(class="form__item")
+                                        label(class="form__label") Электронная почта:
+                                        input(type="text" class="form__input")
+                                    li(class="form__item")
+                                        label(class="form__label") Коментарий:
+                                        textarea(type="text" class="form__input form__textarea")
+                                ul(class="form__part")
+                                    li(class="form__item")
+                                        label(class="form__label") Страна:
+                                        input(type="text" class="form__input")
+                                    li(class="form__item")
+                                        label(class="form__label") Город:
+                                        input(type="text" class="form__input")
+                                    li(class="form__item")
+                                        label(class="form__label") Улица, дом:
+                                        input(type="text" class="form__input")
+                                    li(class="form__item")
+                                        label(class="form__label") Квартира/офис:
+                                        input(type="text" class="form__input")
+                                    li(class="form__item form__select-wrapper")
+                                        label(class="form__label") Способ доставки:
+                                        select(type="text" class="form__input")
+                                    li(class="form__item form__select-wrapper")
+                                        label(class="form__label") Способ Оплаты:
+                                        select(type="text" class="form__input")
+                            ul(class="orders__footer")
+                                li(class="orders__normal-style") Стоимость товара:
+                                    span(class="orders__bold-style") 3 762.85 руб.
+                                li(class="orders__normal-style") Стоимость доставки:
+                                    span(class="orders__bold-style") 3 762.85 руб.
+                                li(class="orders__normal-style") Итого:
+                                    span(class="orders__bold-style") 262.85 руб.
+                                li()
+                                    button(class="btn") ОФОРМИТЬ
+            include ./blocks/footer.pug
+        form(class="overlay-entrance")
+            div(class="overlay-form__window")
+                div(class="overlay-form__heading") Вход
+                div(class="overlay-entrance__content")
+                    div(class="overlay-form__inputs")
+                        div(class="form__item")
+                            label(class="form__label") Имя:
+                            input(class="form__input")
+                        div(class="form__item")
+                            label(class="form__label") Телефон:
+                            input(class="form__input")
+                    input( type="checkbox" id="checkbox-remember" class="checkbox-remember" checked)
+                    label(for="checkbox-remember" class="checkbox-remember__label") Запомнить меня
+                    button(class="btn") Войти
+                    div(class="overlay-entrance__links")
+                        a(class="overlay-entrance__link") Регистрация
+                        a(class="overlay-entrance__link") Забыли пароль?
+        script(type="template" id="overlayTemplate") 
+            div(class="overlay")
+                div(class="overlay__window")
+                    div(class="overlay__header")
+                        div(class="overlay__header-success")
+                            svg(width="34" height="27" viewBox="0 0 34 27")
+                                use(xlink:href="./imgs/sprites.svg#overlay-success")
+                            h3(class="overlay__heading") Успешно
+                        div(class="overlay__header-error")
+                            svg(width="27" height="27" viewBox="0 0 27 27")
+                                use(xlink:href="./imgs/sprites.svg#overlay-error")
+                            h3(class="overlay__heading") Внимание!
+                    div(class="overlay__message")
+                        div(class="overlay__message-text")
+                        div(class="overlay__btns")
+                            button(class="btn btn-cancel overlay__btn") Отмена
+                            button(class="btn overlay__btn") ок
+        script(src="./main.min.js" type="text/javascript")

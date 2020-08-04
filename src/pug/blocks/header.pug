@@ -1,0 +1,64 @@
+header(class="header")
+    div(class="container__content")
+        div(class="header__content")
+            a(href="./index.html")
+                img(src="./imgs/logo.png")
+            div(class="address")
+                svg(width="16" height="22" viewBox="0 0 16 22")
+                    use(xlink:href="./imgs/sprites.svg#address")
+                div(class="address__select-wrapper")
+                    select(class="address__select")
+                        option() г. Ростов-на-Дону
+            div(class="phone")
+                a(class="header__link" href="tel:+78633032825") <svg width="16" height="22" viewBox="0 0 16 22"> <use xlink:href="./imgs/sprites.svg#phone"></use></svg>
+                    div(class="phone__number") +7 (863) <span class="phone__number-style">303-28-25</span>
+            nav(class="nav")
+                ul(class="nav__user")
+                    li(class="nav__user-item entrance")
+                        a(class="nav__link") <span class="nav__user-text"> Вход </span>
+                    li(class="nav__user-item reg")
+                        a(class="nav__link") <a href="./registration.html" class="nav__user-text"> регистрация </a>
+                    li(class="nav__user-item user-name" style="display:none;")
+                        a(class="nav__link") <svg width="21" height="24" viewBox="0 0 21 24"> <use xlink:href="./imgs/sprites.svg#user"></use></svg> <span class="nav__user-name nav__user-text"> Сергей</span>
+                    li(class="nav__user-item user-edit" style="display:none;") 
+                        a(class="nav__link") <span class="nav__user-text"> ред.профиль </span>
+                    li(class="nav__user-item exit" style="display:none;") 
+                        a(class="nav__link") <span class="nav__user-text"> выход </span>
+                div(class="nav__cart")
+                    a(href="./basket.html" class="nav__basket")
+                        div(class="nav__basket-icon nav__cart-icon")
+                            svg(width="19" height="17" viewBox="0 0 19 17")
+                                use(xlink:href="./imgs/sprites.svg#basket")
+                        div(class="nav__cart-heading") Корзина
+                    a(href="./orders.html" class="nav__orders")
+                        div(class="nav__orders-icon nav__cart-icon") 3
+                        div(class="nav__cart-heading") Заказы
+ol(style="display:none" itemscope itemtype="https://schema.org/BreadcrumbList")
+    li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+        a(itemprop="item" href="https://manifetko.github.io/dist/")
+            span(itemprop="name") Главная
+        meta(itemprop="position" content="0")
+    li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+        a(itemprop="item" href="https://manifetko.github.io/dist/results.html")
+            span(itemprop="name") Результаты поиска
+        meta(itemprop="position" content="2")
+    li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+        a(itemprop="item" href="https://manifetko.github.io/dist/result-model.html")
+            span(itemprop="name") Модель из поиска
+        meta(itemprop="position" content="3")
+    li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+        a(itemprop="item" href="https://manifetko.github.io/dist/basket.html")
+            span(itemprop="name") Корзина
+        meta(itemprop="position" content="1")
+    li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+        a(itemprop="item" href="https://manifetko.github.io/dist/registration.html")
+            span(itemprop="name") Регистрация
+        meta(itemprop="position" content="1")
+    li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+        a(itemprop="item" href="https://manifetko.github.io/dist/orders.html")
+            span(itemprop="name") Заказы
+        meta(itemprop="position" content="1")
+    li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+        a(itemprop="item" href="https://manifetko.github.io/dist/checkout.html")
+            span(itemprop="name") Оформление заказа
+        meta(itemprop="position" content="1")

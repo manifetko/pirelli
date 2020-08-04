@@ -1,0 +1,13 @@
+.checkout {
+  width: 100%;
+  background: #fff;
+  border-radius: 0.3125rem;
+  padding: 2rem 5rem 1rem;
+  margin-bottom: 3rem;
+  @include tablets{
+    padding: 2rem 2.9rem 1rem;
+  }
+  @include phones{
+    padding: 2rem 1.5rem 1rem;
+  }
+}

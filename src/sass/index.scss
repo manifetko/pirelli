@@ -1,0 +1,608 @@
+.brand {
+  width: 100%;
+  background: #fff;
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 4rem 3rem 2.5rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  @include tablets {
+    padding: 2rem;
+  }
+  &__content {
+    display: flex;
+    @include tablets {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__img {
+    object-fit: contain;
+    margin-right: 2.5rem;
+  }
+  &__text {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: normal;
+    font-size: 0.75rem;
+    color: #000000;
+    @include tablets {
+      margin-top: 2rem;
+    }
+    &-par {
+      margin-top: 1.5rem;
+    }
+  }
+  &__heading {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #27509b;
+    margin-bottom: 1.5rem;
+  }
+}
+.brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  &__item {
+    width: 8rem;
+    height: 8rem;
+    background: #fff;
+    border-radius: 0.2rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    margin-bottom: 1.25rem;
+  }
+}
+.filter {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  @include tablets {
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  &__result {
+    width: 100%;
+    &-header {
+      display: flex;
+      align-items: center;
+    }
+    &-logo {
+      @include tablets {
+        margin: 1.5rem 0;
+      }
+    }
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      background: #fff;
+      border-radius: 0.2rem;
+      align-items: center;
+      padding-right: 3rem;
+      margin-bottom: 1.25rem;
+      @include tablets {
+        flex-direction: column;
+        padding: 0 0 1rem 0;
+      }
+    }
+    &-heading {
+      font-family: "Noto Sans", sans-serif;
+      font-weight: bold;
+      font-size: 1.25rem;
+      color: #333333;
+    }
+    &-about {
+      font-family: "Noto Sans", sans-serif;
+      font-weight: normal;
+      font-size: 0.75rem;
+      color: #000000;
+      display: flex;
+      flex-direction: column;
+      @include tablets {
+        align-items: center;
+      }
+    }
+    &-types {
+      display: flex;
+      margin-bottom: 1rem;
+      @include tablets{
+        margin: 1.5rem 0 0 0;
+      }
+    }
+    &-text {
+      margin-left: 0.5rem;
+    }
+    &-type {
+      display: flex;
+      align-items: center;
+      margin-right: 1rem;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+    @include tablets {
+      margin-bottom: 1rem;
+    }
+  }
+  &__name {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    font-size: 0.5rem;
+    text-transform: uppercase;
+    color: #fce500;
+    margin-left: 0.5rem;
+    .active & {
+      color: #fff;
+      text-decoration: underline;
+    }
+  }
+}
+.search {
+  width: 100%;
+  margin-top: 1.875rem;
+  &__header {
+    display: flex;
+    align-items: center;
+    flex: 1 0 auto;
+    @include tablets{
+      width: 100%;
+    }
+  }
+  &__form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.875rem;
+    background: #fff;
+    align-items: center;
+    padding-right: 2.75rem;
+    @include tablets {
+      flex-direction: column;
+      padding: 0 0 2rem 0;
+    }
+  }
+  &__select-list {
+    display: flex;
+    flex-wrap: wrap;
+    @include tablets {
+      padding: 2rem;
+      justify-content: center;
+    }
+  }
+  &__heading {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #27509b;
+    max-width: 10rem;
+    margin-right: 2rem;
+    margin-left: 1rem;
+    @include tablets{
+      margin: 0;
+    }
+  }
+  &__img {
+    @include tablets {
+      width: 40%;
+    }
+    @include phones{
+      width: 48%;
+    }
+  }
+  &__label {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: normal;
+    font-size: 0.75rem;
+    line-height: 16px;
+    color: #27509b;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+    @include tablets {
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+    &-item {
+      color: #c4c4c4;
+      margin-right: 0.3rem;
+    }
+    &--active {
+      color: black;
+      font-weight: bold;
+    }
+  }
+  &__select-item {
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+  }
+  &__select-auto{
+    margin-left: 1rem;
+  }
+  &__input-auto {
+    border: 0;
+    outline: none;
+    background: #f2f7ff;
+    border-radius: 0.3125rem;
+    line-height: 1.7rem;
+    width: 100%;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    font-size: 0.75rem;
+    line-height: 1.7rem;
+    padding-left: 1rem;
+  }
+  &__result {
+    width: 100%;
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      margin: 3.2rem 0;
+    }
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-around;
+    }
+    &-btn {
+      padding: 1rem 0.7rem;
+      @include tablets {
+        margin-top: 1rem;
+      }
+    }
+    &-name {
+      font-family: "Noto Sans", sans-serif;
+      font-weight: bold;
+      font-size: 1rem;
+      color: #000000;
+      cursor: pointer;
+    }
+    &-price {
+      font-family: "Noto Sans", sans-serif;
+      font-weight: bold;
+      font-size: 1.25rem;
+      color: #27509b;
+      margin: 0.4rem 0;
+    }
+    &-btns {
+      display: flex;
+      justify-content: space-between;
+      @include tablets {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    &-address {
+      font-family: "Noto Sans", sans-serif;
+      font-weight: normal;
+      font-size: 0.75rem;
+      color: #27509b;
+      margin-bottom: 0.75rem;
+    }
+    &-item {
+      background: #fff;
+      border-radius: 0.2rem;
+      max-width: 17.3125rem;
+      width: 100%;
+      margin-right: 1rem;
+      margin-bottom: 1.25rem;
+      display: flex;
+      flex-direction: column;
+    }
+    &-content {
+      padding: 1.125rem 1.25rem;
+    }
+    &-heading {
+      font-family: "Noto Sans", sans-serif;
+      font-weight: bold;
+      font-size: 1.25rem;
+      color: #ffffff;
+    }
+    &-sorting {
+      font-family: "Noto Sans", sans-serif;
+      font-weight: bold;
+      font-size: 0.75rem;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      @include tablets {
+        flex-direction: column;
+      }
+    }
+    &-select {
+      padding: 0 2rem 0 0.675rem;
+    }
+    &-style {
+      margin-right: 0.5rem;
+      @include tablets {
+        margin: 0 0 1rem 0;
+      }
+    }
+  }
+}
+.model {
+  width: 100%;
+  display: flex;
+  margin: 2.5rem 0;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 0.2rem;
+  align-items: center;
+  padding-right: 3rem;
+  @include tablets{
+    align-items: center;
+    padding: 1rem 1.5rem 1rem 0;
+  }
+  @include phones{
+    flex-direction: column;
+    padding: 0 1.5rem;
+  }
+  &__img{
+    @include tablets{
+      width: 54%;
+    }
+    @include phones{
+      width: 70%;
+    }
+  }
+  &__logo{
+    width: 54%;
+    object-fit: contain;
+    @include tablets{
+      width: auto;
+    }
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    @include tablets{
+      flex-direction: column;
+    }
+  }
+  &__heading {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #333333;
+    margin-bottom: 1rem;
+  }
+  &__price {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    color: #27509b;
+  }
+  &__about {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: normal;
+    font-size: 0.75rem;
+    line-height: 2rem;
+    color: #000000;
+  }
+}
+.result-model {
+  width: 100%;
+  margin-top: 2rem;
+  &-btn {
+    margin-left: 1.5rem;
+    @include tablets {
+      margin: 0;
+      padding: 1rem 1rem;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 0.2rem;
+    @include tablets {
+      flex-direction: column;
+    }
+  }
+  &__img {
+    width: 32%;
+    @include tablets {
+      width: 50%;
+    }
+    @include phones{
+      width: 70%;
+    }
+  }
+  &__content {
+    padding: 2rem 3rem;
+    @include tablets {
+      padding: 0 1.5rem 1.5rem;
+    }
+  }
+  &__heading {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #333333;
+    margin-bottom: 1.875rem;
+  }
+  &__price {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #27509b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3.5rem;
+    @include tablets {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include tablets {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &-part {
+      font-family: "Noto Sans", sans-serif;
+      font-weight: normal;
+      font-size: 0.75rem;
+      line-height: 1rem;
+      color: #000000;
+      margin-right: 1rem;
+    }
+  }
+  &__availability {
+    margin-bottom: 1rem;
+  }
+  &__warning {
+    margin: 1.75rem 0 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    &-text {
+      font-family: "Noto Sans", sans-serif;
+      font-weight: normal;
+      font-size: 0.675rem;
+      line-height: 0.875rem;
+      color: #ffffff;
+      margin-left: 1rem;
+      @include tablets {
+        width: 90%;
+      }
+    }
+  }
+  &__btns {
+    display: flex;
+    @include tablets {
+      margin-top: 2rem;
+      justify-content: space-between;
+      width: 100%;
+    }
+  }
+  &__logo {
+    display: flex;
+  }
+  &__indirect {
+    line-height: 1.8rem;
+  }
+}
+.slider {
+  width: 100%;
+  height: 22.1875rem;
+  margin-bottom: 3.125rem;
+  overflow: hidden;
+  position: relative;
+  @include phones {
+    height: 8.875rem;
+  }
+  @include tablets{
+    height: 16.1875rem;
+  }
+  &__list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+  }
+  &__item {
+    width: 100%;
+    height: 100%;
+    background: url(./imgs/slider-img.jpg);
+    background-size: cover;
+    flex: 0 0 100%;
+    box-shadow: 0.625rem 0.625rem 0.3125rem rgba(0, 0, 0, 0.25);
+    border-radius: 0.1875rem;
+  }
+  &__breadcrumbs {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    z-index: 10;
+    & .active {
+      background: #fce500;
+    }
+    &-item {
+      width: 0.75rem;
+      height: 0.75rem;
+      border: 0.0625rem solid #fce500;
+      box-sizing: border-box;
+      border-radius: 50%;
+      margin-right: 2rem;
+      cursor: pointer;
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+.btn-slider {
+  position: absolute;
+  left: 50%;
+  bottom: 15%;
+  z-index: 10;
+  transform: translateX(-50%);
+  @include phones {
+    display: none;
+  }
+}
+.about-tires {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3.125rem;
+  @include tablets {
+    flex-direction: column;
+  }
+  &__content {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: normal;
+    font-size: 0.875rem;
+    color: #ffffff;
+    margin-right: 3.75rem;
+    @include tablets {
+      margin: 0;
+    }
+  }
+  &__text {
+    margin-bottom: 2.5rem;
+  }
+  &__heading {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1.875rem;
+    color: #ffffff;
+    margin-bottom: 2.8rem;
+  }
+  &__img {
+    box-shadow: 0.625rem 0.625rem 0.3125rem rgba(0, 0, 0, 0.25);
+    border-radius: 0.1875rem;
+    width: 50%;
+    @include tablets {
+      width: auto;
+      margin-top: 2rem;
+      height: 18rem;
+    }
+    @include phones{
+      width: 100%;
+      height: auto;
+    }
+  }
+}

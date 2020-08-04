@@ -1,0 +1,153 @@
+html,
+body {
+  height: 100%;
+  margin: 0rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+.wrapper {
+  min-width: 0px;
+  flex-direction: column;
+  background: #27509b;
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+html {
+  font-size: 16px;
+}
+button:active,
+button:focus {
+  outline: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.form {
+  width: 100%;
+  &__label {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: normal;
+    font-size: 0.75rem;
+    line-height: 16px;
+    color: #27509b;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0.5rem;
+  }
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 3rem;
+    @include phones{
+      flex-direction: column;
+    }
+  }
+  &__part {
+    width: 100%;
+    max-width: 21rem;
+    margin-right: 2rem;
+  }
+
+  &__textarea {
+    resize: none;
+    min-height: 5rem;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
+  }
+  &__input {
+    border: 0;
+    outline: none;
+    appearance: none;
+    border-radius: 0.3125rem;
+    background: #f2f7ff;
+    font-family: "Noto Sans", sans-serif;
+    padding: 0.4rem;
+    width: 100%;
+  }
+  &__select {
+    width: 100%;
+    min-width: 6.5rem;
+    appearance: none;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    background: #f2f7ff;
+    border-radius: 0.3125rem;
+    line-height: 1.7rem;
+    &-wrapper {
+      width: 100%;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: "";
+        display: block;
+        background: url(imgs/select-search.svg) no-repeat;
+        pointer-events: none;
+        width: 1rem;
+        right: 0.2rem;
+        height: 1rem;
+        bottom: 20%;
+      }
+    }
+  }
+}
+.container {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  &__content {
+    max-width: 1172px;
+    margin: 0 auto;
+    width: 95%;
+  }
+  &__heading {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 2.75rem 0;
+  }
+}

@@ -1,0 +1,161 @@
+doctype html
+html(lang="en")
+    head
+        title Home
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        link(href="./main.min.css" type="text/css" rel="stylesheet")
+    body
+        div(class="wrapper")
+            include ./blocks/header.pug
+            div(class="container")
+                main(class="container__content")
+                    div(class="brand")
+                        h1(class="brand__heading") Michelin
+                        div(class="brand__content")
+                            img(src="./imgs/brand-michelin.png" class="brand__img")
+                            div(class="brand__text") Название марки Michelin - это настоящий синоним слова "инновация". За всю свою более чем столетнюю историю эта компания не переставала удивлять мир новинками. Список изобретений, сделанных данной фирмой, поистине огромен. Именно они придумали съемные велосипединые шины и шины низкого давления для автомобилей. Резина Michelin (Мишлен) популярна во всех странах мира и в наши дни - в первую очередь, за свое превосходное качество и высокую надежность. Существуют разные виды продукции этого бренда - летние шины, зимние, грузовые, для легковых автомобилей и многие другие. Купить шины Мишлен (Michelin) по выгодной цене и почитать отзывы от других водителей можно на страницах нашего интернет-магазина.
+                                p(class="brand__text-par") У нас Вы можете приобрести шины Michelin (Мишлен) оптом и в розницу. Наша логистика позволяет оперативно доставить шины в любой регион РФ. По вопросам оптовых поставок шин Michelin обращаться по тел. +7(918)855-65-11 с 10 до 18 (МСК)
+                    ul(class="filter")
+                        li(class="filter__item")
+                            svg(width="27" height="22" viewBox="0 0 27 22")
+                                use(xlink:href="./imgs/sprites.svg#filter1")
+                            span(class="filter__name") ВСЕ Модели (56)
+                        li(class="filter__item active")
+                            svg(width="27" height="27" viewBox="0 0 27 27")
+                                use(xlink:href="./imgs/sprites.svg#filter2")
+                            span(class="filter__name") ЗИМНИЕ (34)
+                        li(class="filter__item")
+                            svg(width="27" height="27" viewBox="0 0 27 27")
+                                use(xlink:href="./imgs/sprites.svg#filter3")
+                            span(class="filter__name") ЛЕТНИЕ (17)
+                        li(class="filter__item")
+                            svg(width="27" height="27" viewBox="0 0 27 27")
+                                use(xlink:href="./imgs/sprites.svg#filter4")
+                            span(class="filter__name") ШИПОВАННЫЕ (23)
+                        li(class="filter__item")
+                            svg(width="18" height="26" viewBox="0 0 18 26")
+                                use(xlink:href="./imgs/sprites.svg#filter5")
+                            span(class="filter__name") ВСЕСЕЗОННЫЕ (42)
+                    ul(class="filter__result")
+                        li(class="filter__result-item")
+                            div(class="filter__result-header")  
+                                img(src="./imgs/filter-result.png")
+                                h3(class="filter__result-heading") Michelin X-Ice XI3 (68)
+                            div(class="filter__result-about")
+                                div(class="filter__result-types")
+                                    div(class="filter__result-type")
+                                        svg(width="17" height="17" viewBox="0 0 17 17")
+                                            use(xlink:href="./imgs/sprites.svg#result-type1")
+                                        span(class="filter__result-text") Зимние   
+                                    div(class="filter__result-type")        
+                                        svg(width="17" height="17" viewBox="0 0 17 17")
+                                            use(xlink:href="./imgs/sprites.svg#result-type2")
+                                        span(class="filter__result-text")  Шипованые
+                                p() R16   R17   R18    R19   R20   R21   R22
+                            img(class="filter__result-logo" src="./imgs/filter-logo.png")
+                            a(class="btn") подробнее
+                        li(class="filter__result-item")
+                            div(class="filter__result-header")  
+                                img(src="./imgs/filter-result.png")
+                                h3(class="filter__result-heading") Michelin X-Ice XI3 (68)
+                            div(class="filter__result-about")
+                                div(class="filter__result-types")
+                                    div(class="filter__result-type")
+                                        svg(width="17" height="17" viewBox="0 0 17 17")
+                                            use(xlink:href="./imgs/sprites.svg#result-type1")
+                                        span(class="filter__result-text") Зимние   
+                                    div(class="filter__result-type")        
+                                        svg(width="17" height="17" viewBox="0 0 17 17")
+                                            use(xlink:href="./imgs/sprites.svg#result-type2")
+                                        span(class="filter__result-text")  Шипованые
+                                p() R16   R17   R18    R19   R20   R21   R22
+                            img(class="filter__result-logo" src="./imgs/filter-logo.png")
+                            a(class="btn") подробнее
+                        li(class="filter__result-item")
+                            div(class="filter__result-header")  
+                                img(src="./imgs/filter-result.png")
+                                h3(class="filter__result-heading") Michelin X-Ice XI3 (68)
+                            div(class="filter__result-about")
+                                div(class="filter__result-types")
+                                    div(class="filter__result-type")
+                                        svg(width="17" height="17" viewBox="0 0 17 17")
+                                            use(xlink:href="./imgs/sprites.svg#result-type1")
+                                        span(class="filter__result-text") Зимние   
+                                    div(class="filter__result-type")        
+                                        svg(width="17" height="17" viewBox="0 0 17 17")
+                                            use(xlink:href="./imgs/sprites.svg#result-type2")
+                                        span(class="filter__result-text")  Шипованые
+                                p() R16   R17   R18    R19   R20   R21   R22
+                            img(class="filter__result-logo" src="./imgs/filter-logo.png")
+                            a(class="btn") подробнее
+                        li(class="filter__result-item")
+                            div(class="filter__result-header")  
+                                img(src="./imgs/filter-result.png")
+                                h3(class="filter__result-heading") Michelin X-Ice XI3 (68)
+                            div(class="filter__result-about")
+                                div(class="filter__result-types")
+                                    div(class="filter__result-type")
+                                        svg(width="17" height="17" viewBox="0 0 17 17")
+                                            use(xlink:href="./imgs/sprites.svg#result-type1")
+                                        span(class="filter__result-text") Зимние   
+                                    div(class="filter__result-type")        
+                                        svg(width="17" height="17" viewBox="0 0 17 17")
+                                            use(xlink:href="./imgs/sprites.svg#result-type2")
+                                        span(class="filter__result-text")  Шипованые
+                                p() R16   R17   R18    R19   R20   R21   R22
+                            img(class="filter__result-logo" src="./imgs/filter-logo.png")
+                            a(class="btn") подробнее
+                    section(class="slider")
+                        a(href="#about-tires" class="btn btn-slider") Подробнее
+                        ul(class="slider__breadcrumbs")
+                            li(class="slider__breadcrumbs-item active")
+                            li(class="slider__breadcrumbs-item")
+                            li(class="slider__breadcrumbs-item")
+                        ul(class="slider__list")
+                            li(class="slider__item")
+                            li(class="slider__item")
+                            li(class="slider__item")
+                    section(id="about-tires" class="about-tires")
+                        div(class="about-tires__content") 
+                            h1(class="about-tires__heading") Шины Michelin
+                            p(class="about-tires__text") Название марки Michelin - это настоящий синоним слова "инновация". За всю свою более чем столетнюю историю эта компания не переставала удивлять мир новинками. Список изобретений, сделанных данной фирмой, поистине огромен. Именно они придумали съемные велосипединые шины и шины низкого давления для автомобилей. Резина Michelin (Мишлен) популярна во всех странах мира и в наши дни - в первую очередь, за свое превосходное качество и высокую надежность. Существуют разные виды продукции этого бренда - летние шины, зимние, грузовые, для легковых автомобилей и многие другие. Купить шины Мишлен (Michelin) по выгодной цене и почитать отзывы от других водителей можно на страницах нашего интернет-магазина.
+                            p() У нас Вы можете приобрести шины Michelin (Мишлен) оптом и в розницу. Наша логистика позволяет оперативно доставить шины в любой регион РФ. По вопросам оптовых поставок шин Michelin обращаться по тел. +7(918)855-65-11 с 10 до 18 (МСК)Все
+                        img(src="./imgs/about-tires.jpg" class="about-tires__img") 
+            include ./blocks/footer.pug
+        form(class="overlay-entrance")
+            div(class="overlay-form__window")
+                div(class="overlay-form__heading") Вход
+                div(class="overlay-entrance__content")
+                    div(class="overlay-form__inputs")
+                        div(class="form__item")
+                            label(class="form__label") Имя:
+                            input(class="form__input")
+                        div(class="form__item")
+                            label(class="form__label") Телефон:
+                            input(class="form__input")
+                    input( type="checkbox" id="checkbox-remember" class="checkbox-remember" checked)
+                    label(for="checkbox-remember" class="checkbox-remember__label") Запомнить меня
+                    button(class="btn") Войти
+                    div(class="overlay-entrance__links")
+                        a(class="overlay-entrance__link") Регистрация
+                        a(class="overlay-entrance__link") Забыли пароль?
+        script(type="template" id="overlayTemplate") 
+            div(class="overlay")
+                div(class="overlay__window")
+                    div(class="overlay__header")
+                        div(class="overlay__header-success")
+                            svg(width="34" height="27" viewBox="0 0 34 27")
+                                use(xlink:href="./imgs/sprites.svg#overlay-success")
+                            h3(class="overlay__heading") Успешно
+                        div(class="overlay__header-error")
+                            svg(width="27" height="27" viewBox="0 0 27 27")
+                                use(xlink:href="./imgs/sprites.svg#overlay-error")
+                            h3(class="overlay__heading") Внимание!
+                    div(class="overlay__message")
+                        div(class="overlay__message-text")
+                        div(class="overlay__btns")
+                            button(class="btn btn-cancel overlay__btn") Отмена
+                            button(class="btn overlay__btn") ок
+        script(src="./main.min.js" type="text/javascript")

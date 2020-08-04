@@ -1,0 +1,28 @@
+.registration {
+    width: 100%;
+    background: #fff;
+    border-radius: 0.3125rem;
+    padding: 2rem 7rem 1rem;
+    margin-bottom: 3rem;
+    @include tablets{
+        padding: 2rem 1.5rem 1rem;
+    }
+    &__link{
+        text-decoration: underline;
+        color: #27509b;
+        margin-left: 0.2rem;
+    }
+    &__date{
+        display: flex;
+        @include tablets{
+            flex-wrap: wrap;
+        }
+    }
+    &__select{
+        margin-right: 1rem;
+        @include tablets{
+            margin: 0 0 1rem 0;
+        }
+    }
+  }
+  
