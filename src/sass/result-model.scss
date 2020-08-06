@@ -1,0 +1,109 @@
+.result-model {
+    width: 100%;
+    margin-top: 2rem;
+    &-btn {
+      margin-left: 1.5rem;
+      @include tablets {
+        margin: 0;
+        padding: 1rem 1rem;
+      }
+    }
+    &__item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      border-radius: 0.2rem;
+      @include tablets {
+        flex-direction: column;
+      }
+    }
+    &__img {
+      width: 32%;
+      @include tablets {
+        width: 50%;
+      }
+      @include phones{
+        width: 70%;
+      }
+    }
+    &__content {
+      padding: 2rem 3rem;
+      @include tablets {
+        padding: 0 1.5rem 1.5rem;
+      }
+    }
+    &__heading {
+      font-family: "Noto Sans", sans-serif;
+      font-weight: bold;
+      font-size: 1.5rem;
+      color: #333333;
+      margin-bottom: 1.875rem;
+    }
+    &__price {
+      font-family: "Noto Sans", sans-serif;
+      font-weight: bold;
+      font-size: 1.25rem;
+      color: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 3.5rem;
+      @include tablets {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+    &__text {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      @include tablets {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      &-part {
+        font-family: "Noto Sans", sans-serif;
+        font-weight: normal;
+        font-size: 0.75rem;
+        line-height: 1rem;
+        color: #000000;
+        margin-right: 1rem;
+      }
+    }
+    &__availability {
+      margin-bottom: 1rem;
+    }
+    &__warning {
+      margin: 1.75rem 0 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      &-text {
+        font-family: "Noto Sans", sans-serif;
+        font-weight: normal;
+        font-size: 0.675rem;
+        line-height: 0.875rem;
+        color: #000000;
+        margin-left: 1rem;
+        @include tablets {
+          width: 90%;
+        }
+      }
+    }
+    &__btns {
+      display: flex;
+      @include tablets {
+        margin-top: 2rem;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+    &__logo {
+      display: flex;
+    }
+    &__indirect {
+      line-height: 1.8rem;
+    }
+  }

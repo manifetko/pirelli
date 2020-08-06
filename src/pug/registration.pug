@@ -51,52 +51,19 @@ html(lang="en")
                                         label(class="form__label") Область:
                                         input(type="text" class="form__input")
                                     li(class="form__item")
-                                        label(class="form__label") город:
+                                        label(class="form__label") Город:
                                         input(type="text" class="form__input")
                                     li(class="form__item")
                                         label(class="form__label") Пароль:
-                                        input(type="text" class="form__input")
+                                        input(type="password" class="form__input")
                                     li(class="form__item")
                                         label(class="form__label") Повторить пароль:
-                                        input(type="text" class="form__input")
-                            div(class="orders__footer")
+                                        input(type="password" class="form__input")
+                            div(class="registration__footer")
                                 div(class="checkbox")
                                     input( type="checkbox" id="checkbox-remember" class="checkbox-remember" checked)
                                     label(for="checkbox-remember" class="checkbox-remember__label") Регистрируясь, я принимаю условия <a class="registration__link"> пользовательского соглашения </a>
                                 button(class="btn") Зарегистрироваться
             include ./blocks/footer.pug
-        form(class="overlay-entrance")
-            div(class="overlay-form__window")
-                div(class="overlay-form__heading") Вход
-                div(class="overlay-entrance__content")
-                    div(class="overlay-form__inputs")
-                        div(class="form__item")
-                            label(class="form__label") Имя:
-                            input(class="form__input")
-                        div(class="form__item")
-                            label(class="form__label") Телефон:
-                            input(class="form__input")
-                    input( type="checkbox" id="checkbox-remember" class="checkbox-remember" checked)
-                    label(for="checkbox-remember" class="checkbox-remember__label") Запомнить меня
-                    button(class="btn") Войти
-                    div(class="overlay-entrance__links")
-                        a(class="overlay-entrance__link") Регистрация
-                        a(class="overlay-entrance__link") Забыли пароль?
-        script(type="template" id="overlayTemplate") 
-            div(class="overlay")
-                div(class="overlay__window")
-                    div(class="overlay__header")
-                        div(class="overlay__header-success")
-                            svg(width="34" height="27" viewBox="0 0 34 27")
-                                use(xlink:href="./imgs/sprites.svg#overlay-success")
-                            h3(class="overlay__heading") Успешно
-                        div(class="overlay__header-error")
-                            svg(width="27" height="27" viewBox="0 0 27 27")
-                                use(xlink:href="./imgs/sprites.svg#overlay-error")
-                            h3(class="overlay__heading") Внимание!
-                    div(class="overlay__message")
-                        div(class="overlay__message-text")
-                        div(class="overlay__btns")
-                            button(class="btn btn-cancel overlay__btn") Отмена
-                            button(class="btn overlay__btn") ок
+        include ./blocks/overlay-login.pug
         script(src="./main.min.js" type="text/javascript")

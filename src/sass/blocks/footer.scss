@@ -1,0 +1,51 @@
+.footer {
+  width: 100%;
+  background: #333333;
+  &__content {
+    display: flex;
+    padding: 2.875rem 0 0 1rem;
+    justify-content: space-between;
+    align-items: center;
+    color:#fff;
+    @include phones{
+      padding: 2.875rem 1rem;
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+  &__tires-type {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 700;
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #27509b;
+    margin-bottom: 1rem;
+  }
+  &__tires-link {
+    color: #FFFFFF;
+  }
+  &__contacts-item {
+    margin-bottom: 1rem;
+    color: #FFFFFF;
+  }
+  &__socials {
+    display: flex;
+    &-item {
+      margin-right: 2.3rem;
+      color:#fff;
+    }
+  }
+  &__copyright {
+    max-width: 18rem;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: normal;
+    font-size: 0.75rem;
+    color: #FFFFFF;
+    margin-top: 2rem;
+  }
+}

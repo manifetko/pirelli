@@ -1,7 +1,7 @@
 doctype html
 html(lang="en")
     head
-        title Home
+        title Pirelli
         meta(charset="utf-8")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible" content="ie=edge")
@@ -14,7 +14,7 @@ html(lang="en")
                     section(class="search")
                         form(class="search__form")
                             div(class="search__header")
-                                img(src="./imgs/tires-search.jpg" class="search__img")
+                                img(src="./imgs/tires/tires-search.png" class="search__img")
                                 h1(class="search__heading") Подобрать шины
                             ul(class="search__select-list")
                                 li(class="search__select-item")
@@ -33,7 +33,7 @@ html(lang="en")
                                     div(class="form__label") Сезонность
                                     div(class="form__select-wrapper")
                                         select(class="form__select")
-                            a(href="./results.html" class="btn btn-search") Искать
+                            a(href="./search-results.html" class="btn btn-search") Искать
                         form(class="search__form")
                             div(class="search__header")
                                 img(src="./imgs/disc-search.jpg" class="search__img")
@@ -55,10 +55,10 @@ html(lang="en")
                                     div(class="form__label") PCD
                                     div(class="form__select-wrapper")
                                         select(class="form__select")
-                            a(href="./results.html" class="btn btn-search") Искать
+                            a(href="./search-results.html" class="btn btn-search") Искать
                         form(class="search__form")
                             div(class="search__header")
-                                img(src="./imgs/auto-search.jpg" class="search__img")
+                                img(src="./imgs/auto-search.png" class="search__img")
                                 h1(class="search__heading") Подобрать авто
                             div(class="search__select-item search__select-auto")
                                 ul(class="search__label")
@@ -68,81 +68,9 @@ html(lang="en")
                                     li(class="search__label-item") Двигатель &gt;
                                     li(class="search__label-item") Коплектация
                                 input(class="search__input-auto" type="search")
-                            a(href="./results.html" class="btn btn-search") Искать
-                    section(class="slider")
-                        a(href="#about-tires" class="btn btn-slider") Подробнее
-                        ul(class="slider__breadcrumbs")
-                            li(class="slider__breadcrumbs-item active")
-                            li(class="slider__breadcrumbs-item")
-                            li(class="slider__breadcrumbs-item")
-                        ul(class="slider__list")
-                            li(class="slider__item")
-                            li(class="slider__item")
-                            li(class="slider__item")
-                    section(id="about-tires" class="about-tires")
-                        div(class="about-tires__content") 
-                            h1(class="about-tires__heading") Шины Michelin
-                            p(class="about-tires__text") Название марки Michelin - это настоящий синоним слова "инновация". За всю свою более чем столетнюю историю эта компания не переставала удивлять мир новинками. Список изобретений, сделанных данной фирмой, поистине огромен. Именно они придумали съемные велосипединые шины и шины низкого давления для автомобилей. Резина Michelin (Мишлен) популярна во всех странах мира и в наши дни - в первую очередь, за свое превосходное качество и высокую надежность. Существуют разные виды продукции этого бренда - летние шины, зимние, грузовые, для легковых автомобилей и многие другие. Купить шины Мишлен (Michelin) по выгодной цене и почитать отзывы от других водителей можно на страницах нашего интернет-магазина.
-                            p() У нас Вы можете приобрести шины Michelin (Мишлен) оптом и в розницу. Наша логистика позволяет оперативно доставить шины в любой регион РФ. По вопросам оптовых поставок шин Michelin обращаться по тел. +7(918)855-65-11 с 10 до 18 (МСК)Все
-                        img(src="./imgs/about-tires.jpg" class="about-tires__img") 
+                            a(href="./search-results.html" class="btn btn-search") Искать
+                    include ./blocks/slider.pug
+                    include ./blocks/michelin-tires.pug
             include ./blocks/footer.pug
-        form(class="overlay-form")
-            div(class="overlay-form__window")
-                div(class="overlay-form__heading") Быстрый заказ
-                div(class="overlay-form__content")
-                    h1(class="overlay-form__tires-name") Зимние шины Michelin X-Ice North 4 195/65 R15 95T XL
-                    div(class="calculator")
-                        div(class="calculator__price") 6 460.70 руб.
-                        ul(class="calculator__vars")
-                            li(class="calculator__minus calculator__vars-item") -
-                            li(class="calculator__quantity calculator__vars-item") 4шт
-                            li(class="calculator__plus calculator__vars-item") +
-                    div(class="overlay-form__main-content")
-                        ul(class="overlay-form__inputs")
-                            li(class="overlay-form__inputs-item")
-                                label(class="form__label") Имя:
-                                input(class="form__input")
-                            li(class="overlay-form__inputs-item")
-                                label(class="form__label") Телефон:
-                                input(class="form__input")
-                            li(class="overlay-form__inputs-item")
-                                label(class="form__label") Электронная почта:
-                                input(class="form__input")
-                        div(class="overlay-form__img")
-                            img(class="overlay-form__img-tires" src="./imgs/overlay-tires.jpg")
-                            button(class="overlay-form__submit btn" type="submit") купить
-        form(class="overlay-entrance")
-            div(class="overlay-form__window")
-                div(class="overlay-form__heading") Вход
-                div(class="overlay-entrance__content")
-                    div(class="overlay-form__inputs")
-                        div(class="form__item")
-                            label(class="form__label") Имя:
-                            input(class="form__input")
-                        div(class="form__item")
-                            label(class="form__label") Телефон:
-                            input(class="form__input")
-                    input( type="checkbox" id="checkbox-remember" class="checkbox-remember" checked)
-                    label(for="checkbox-remember" class="checkbox-remember__label") Запомнить меня
-                    button(class="btn") Войти
-                    div(class="overlay-entrance__links")
-                        a(class="overlay-entrance__link") Регистрация
-                        a(class="overlay-entrance__link") Забыли пароль?
-        script(type="template" id="overlayTemplate") 
-            div(class="overlay")
-                div(class="overlay__window")
-                    div(class="overlay__header")
-                        div(class="overlay__header-success")
-                            svg(width="34" height="27" viewBox="0 0 34 27")
-                                use(xlink:href="./imgs/sprites.svg#overlay-success")
-                            h3(class="overlay__heading") Успешно
-                        div(class="overlay__header-error")
-                            svg(width="27" height="27" viewBox="0 0 27 27")
-                                use(xlink:href="./imgs/sprites.svg#overlay-error")
-                            h3(class="overlay__heading") Внимание!
-                    div(class="overlay__message")
-                        div(class="overlay__message-text")
-                        div(class="overlay__btns")
-                            button(class="btn btn-cancel overlay__btn") Отмена
-                            button(class="btn overlay__btn") ок
+        include ./blocks/overlay-login.pug
         script(src="./main.min.js" type="text/javascript")

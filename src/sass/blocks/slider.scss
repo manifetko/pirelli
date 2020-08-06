@@ -1,0 +1,62 @@
+.slider {
+    width: 100%;
+    height: 22.1875rem;
+    margin-bottom: 3.125rem;
+    overflow: hidden;
+    position: relative;
+    @include phones {
+      height: 8.875rem;
+    }
+    @include tablets{
+      height: 16.1875rem;
+    }
+    &__list {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      position: absolute;
+    }
+    &__item {
+      width: 100%;
+      height: 100%;
+      background: url(./imgs/slider-img.jpg);
+      background-size: cover;
+      flex: 0 0 100%;
+      box-shadow: 0.625rem 0.625rem 0.3125rem rgba(0, 0, 0, 0.25);
+      border-radius: 0.1875rem;
+    }
+    &__breadcrumbs {
+      display: flex;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 5%;
+      z-index: 10;
+      & .active {
+        background: #fce500;
+      }
+      &-item {
+        width: 0.75rem;
+        height: 0.75rem;
+        border: 0.0625rem solid #fce500;
+        box-sizing: border-box;
+        border-radius: 50%;
+        margin-right: 2rem;
+        cursor: pointer;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+  
+.btn-slider {
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    z-index: 10;
+    transform: translateX(-50%);
+    @include phones {
+      display: none;
+    }
+  }

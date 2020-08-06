@@ -8,7 +8,6 @@ const concat = require("gulp-concat");
 const babel = require("gulp-babel");
 const uglify = require("gulp-uglify");
 sass.compiler = require("node-sass");
-var px2rem = require("gulp-px-to-rem");
 var pug = require("gulp-pug");
 const reload = browserSync.reload;
 task("html", () => {
@@ -46,5 +45,5 @@ task("server", () => {
 });
 watch("./src/js/*.js", series("scripts")).on("change", reload);
 watch("./src/pug/**/*.pug", series("html")).on("change", reload);
-watch("./src/sass/*.scss", series("styles")).on("change", reload);
+watch("./src/sass/**/*.scss", series("styles")).on("change", reload);
 task("default", series("styles", "scripts", "html", "server"));
