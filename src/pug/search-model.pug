@@ -11,92 +11,20 @@ html(lang="en")
             include ./blocks/header.pug
             div(class="container")
                 main(class="container__content")
-                    div(class="result-model")
-                        div(class="result-model__item" itemscope itemtype="http://schema.org/Product")
-                            meta(itemprop="name" content="Michelin tires")
-                            meta(itemprop="description" content="Зимние шины Michelin X-Ice North 4 195/65 R15 95T XL")
-                            img(class="result-model__img" src="./imgs/tires/model-tires.png" itemprop="image" alt="Michelin X-Ice")
-                            div(class="result-model__content" itemprop="offers" itemscope itemtype="http://schema.org/Offer")
-                                link(itemprop="url" href="https://manifetko.github.io/dist/search-model.html")
-                                h1(class="result-model__heading" itemprop="name") Зимние шины Michelin X-Ice North 4 195/65 R15 95T XL
-                                div(class="result-model__price") 
-                                    span(itemprop="price") 5 640 руб.
-                                    meta(itemprop="priceCurrency" content="RUB")
-                                    div(class="result-model__btns")
-                                        a(class="btn result-model-btn btn__fast-bay") купить сразу
-                                        a(class="btn result-model-btn ") в корзину
-                                div(class="result-model__text")
-                                    div(class="result-model__text-part")
-                                        p() Ширина --------------------------185 мм
-                                        p() Высота --------------------------- 65 %
-                                        p() Диаметр ------------------------ 15″
-                                        p() Сезон ----------------------------- Зимняя
-                                        p() Модель --------------------------- X-ICE 3
-                                        p() Индекс скорости ------------- T
-                                        p() Run on flat ----------------------- Нет
-                                        p() xl ------------------------------------ Да
-                                        p() Тип ТС ---------------------------- Легковой
-                                    div(class="result-model__text-part")
-                                        div(class="result-model__availability")
-                                            p(itemprop = "availability" href = "http://schema.org/InStock") в наличии  |  г. Ростов-на-Дону, ул. Доватора 157
-                                            p(itemprop = "availability" href = "http://schema.org/InStock") в наличии  |  г. Ростов-на-Дону, ул. Доватора 157
-                                            p(itemprop = "availability" href="http://schema.org/OutOfStock") нет наличии  |  г. Ростов-на-Дону, ул. Доватора 157
-                                            p(itemprop = "availability" href = "http://schema.org/InStock") под заказ  |  г. Ростов-на-Дону, ул. Доватора 157
-                                        div(class="result-model__indirect")
-                                            p(itemprop="sku") Артикул: 205711
-                                            p() Модель: Michelin X-Ice
-                                            p(class="result-model__logo") Производитель: <img src="./imgs/logo/logo-manufacturer.png" alt="Michelin">
-                        div(class="result-model__warning")
-                            svg(width="24" height="24" viewBox="0 0 24 24")
-                                use(xlink:href="./imgs/icons/sprites.svg#warning")
-                            div(class="result-model__warning-text")
-                                p() Цена указана при покупке от 4 шт. за наличный расчет.
-                                p() Минимальный заказ 4 шт., меньшее количество можно приобрести только по согласованию с менеджером и 100% предоплате.
-                                p() Остатки товара на складе меняются, о точном наличии товара и ценах уточняйте у менеджера.
+                    div(class="model")
+                        img(class="model__img" src="./imgs/tires/model-tires.png")
+                        div(class="model__content")
+                            div(class="model__text") 
+                                h1(class="model__heading") Michelin X-Ice XI3 (68)
+                                div(class="model__price") От  6 460.70 руб.
+                                div(class="model__about")
+                                    p() Зимние
+                                    p() Шипованые
+                                    p() R16   R17   R18    R19   R20   R21   R22
+                            a(href="./brand.html" class="model__logo-wrapper") 
+                                img(class="model__logo" src="./imgs/logo/logo.png")
                     include ./blocks/slider.pug
                     include ./blocks/michelin-tires.pug
             include ./blocks/footer.pug
-        form(class="overlay-form")
-            div(class="overlay-form__window")
-                div(class="overlay-form__heading") Быстрый заказ
-                div(class="overlay-form__content")
-                    h1(class="overlay-form__tires-name") Зимние шины Michelin X-Ice North 4 195/65 R15 95T XL
-                    div(class="calculator")
-                        div(class="calculator__price") 6 460.70 руб.
-                        ul(class="calculator__vars")
-                            li(class="calculator__minus calculator__vars-item") -
-                            li(class="calculator__quantity calculator__vars-item") 4шт
-                            li(class="calculator__plus calculator__vars-item") +
-                    div(class="overlay-form__main-content")
-                        ul(class="overlay-form__inputs")
-                            li(class="overlay-form__inputs-item")
-                                label(class="form__label") Имя:
-                                input(class="form__input")
-                            li(class="overlay-form__inputs-item")
-                                label(class="form__label") Телефон:
-                                input(class="form__input")
-                            li(class="overlay-form__inputs-item")
-                                label(class="form__label") Электронная почта:
-                                input(class="form__input")
-                        div(class="overlay-form__img")
-                            img(class="overlay-form__img-tires" src="./imgs/tires/overlay-tires.jpg")
-                            button(class="overlay-form__submit btn" type="submit") купить
         include ./blocks/overlay-login.pug
-        script(type="template" id="overlayTemplate") 
-            div(class="overlay")
-                div(class="overlay__window")
-                    div(class="overlay__header")
-                        div(class="overlay__header-success")
-                            svg(width="34" height="27" viewBox="0 0 34 27")
-                                use(xlink:href="./imgs/sprites.svg#overlay-success")
-                            h3(class="overlay__heading") Успешно
-                        div(class="overlay__header-error")
-                            svg(width="27" height="27" viewBox="0 0 27 27")
-                                use(xlink:href="./imgs/sprites.svg#overlay-error")
-                            h3(class="overlay__heading") Внимание!
-                    div(class="overlay__message")
-                        div(class="overlay__message-text")
-                        div(class="overlay__btns")
-                            button(class="btn btn-cancel overlay__btn") Отмена
-                            button(class="btn overlay__btn") ок
         script(src="./main.min.js" type="text/javascript")
