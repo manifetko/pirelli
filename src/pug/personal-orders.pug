@@ -1,0 +1,91 @@
+doctype html
+html(lang="en")
+    head
+        title Заказы
+        meta(charset="utf-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        link(href="./styles.min.css" type="text/css" rel="stylesheet")
+    body
+        div(class="wrapper")
+            include ./blocks/header.pug
+            div(class="container")
+                main(class="container__content")
+                    h2(class="container__heading") Мои заказы
+                    div(class="personal-orders")
+                        ul(class="personal-orders__list")
+                            li(class="personal-orders__item")
+                                div(class="personal-orders__header")
+                                    h3(class="personal-orders__heading") Заказ # 007764565
+                                    div(class="personal-orders__info") Дата создания:
+                                        span(class="personal-orders__info-style") 16. 06. 2020
+                                    div(class="personal-orders__info") Сумма:
+                                        span(class="personal-orders__info-style") 3 762.85 руб.
+                                    div(class="personal-orders__info") Статус заказа:
+                                        span(class="personal-orders__info-style") В РАБОТЕ
+                                    svg(class="personal-orders__details" width="29" height="29" viewBox="0 0 29 29")
+                                        use(xlink:href="./imgs/icons/sprites.svg#personal-orders")
+                                div(class="personal-orders__content")
+                                    ul(class="personal-orders__content-list")
+                                        li(class="personal-orders__content-item")
+                                            h3(class="personal-orders__heading") Зимние шины Michelin X-Ice 3 185/65 R15 92T XL
+                                            span(class="personal-orders__info-style")  4шт
+                                            span(class="personal-orders__info-style")  3 762.85 руб.
+                                        li(class="personal-orders__content-item")
+                                            h3(class="personal-orders__heading") Зимние шины Michelin X-Ice 3 185/65 R15 92T XL
+                                            span(class="personal-orders__info-style")  4шт
+                                            span(class="personal-orders__info-style")  3 762.85 руб.
+                                        li(class="personal-orders__content-item")
+                                            h3(class="personal-orders__heading") Зимние шины Michelin X-Ice 3 185/65 R15 92T XL
+                                            span(class="personal-orders__info-style")  4шт
+                                            span(class="personal-orders__info-style")  3 762.85 руб.
+                                        li(class="personal-orders__content-item")
+                                            h3(class="personal-orders__heading") Зимние шины Michelin X-Ice 3 185/65 R15 92T XL
+                                            span(class="personal-orders__info-style")  4шт
+                                            span(class="personal-orders__info-style")  3 762.85 руб.
+                                    ul(class="personal-orders__footer")
+                                        li(class="personal-orders__info") Дата создания:
+                                            span(class="personal-orders__info-style") 16. 06. 2020
+                                        li(class="personal-orders__info") Сумма:
+                                            span(class="personal-orders__info-style") 3 762.85 руб.
+                                        li(class="personal-orders__info") Статус заказа:
+                                            span(class="personal-orders__info-style") В РАБОТЕ
+                            li(class="personal-orders__item")
+                                div(class="personal-orders__header")
+                                    h3(class="personal-orders__heading") Заказ # 007764565
+                                    div(class="personal-orders__info") Дата создания:
+                                        span(class="personal-orders__info-style") 16. 06. 2020
+                                    div(class="personal-orders__info") Сумма:
+                                        span(class="personal-orders__info-style") 3 762.85 руб.
+                                    div(class="personal-orders__info") Статус заказа:
+                                        span(class="personal-orders__info-style") В РАБОТЕ
+                                    svg(class="personal-orders__details" width="29" height="29" viewBox="0 0 29 29")
+                                        use(xlink:href="./imgs/icons/sprites.svg#personal-orders")
+                                div(class="personal-orders__content")
+                                    ul(class="personal-orders__content-list")
+                                        li(class="personal-orders__content-item")
+                                            h3(class="personal-orders__heading") Зимние шины Michelin X-Ice 3 185/65 R15 92T XL
+                                            span(class="personal-orders__info-style")  4шт
+                                            span(class="personal-orders__info-style")  3 762.85 руб.
+                                        li(class="personal-orders__content-item")
+                                            h3(class="personal-orders__heading") Зимние шины Michelin X-Ice 3 185/65 R15 92T XL
+                                            span(class="personal-orders__info-style")  4шт
+                                            span(class="personal-orders__info-style")  3 762.85 руб.
+                                        li(class="personal-orders__content-item")
+                                            h3(class="personal-orders__heading") Зимние шины Michelin X-Ice 3 185/65 R15 92T XL
+                                            span(class="personal-orders__info-style")  4шт
+                                            span(class="personal-orders__info-style")  3 762.85 руб.
+                                        li(class="personal-orders__content-item")
+                                            h3(class="personal-orders__heading") Зимние шины Michelin X-Ice 3 185/65 R15 92T XL
+                                            span(class="personal-orders__info-style")  4шт
+                                            span(class="personal-orders__info-style")  3 762.85 руб.
+                                    ul(class="personal-orders__footer")
+                                        li(class="personal-orders__info") Дата создания:
+                                            span(class="personal-orders__info-style") 16. 06. 2020
+                                        li(class="personal-orders__info") Сумма:
+                                            span(class="personal-orders__info-style") 3 762.85 руб.
+                                        li(class="personal-orders__info") Статус заказа:
+                                            span(class="personal-orders__info-style") В РАБОТЕ
+            include ./blocks/footer.pug
+        include ./blocks/modal-login.pug
+        script(src="./scripts.min.js" type="text/javascript")

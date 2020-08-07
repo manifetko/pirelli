@@ -1,4 +1,4 @@
-.overlay {
+.modal {
   position: fixed;
   top: 0;
   right: 0;
@@ -67,7 +67,7 @@
     display: block;
   }
 }
-.overlay-form {
+.modal-form {
   position: fixed;
   top: 0;
   overflow-y: overlay;
@@ -180,7 +180,7 @@
     }
   }
 }
-.overlay-login {
+.modal-login {
   position: fixed;
   top: 0;
   display: none;

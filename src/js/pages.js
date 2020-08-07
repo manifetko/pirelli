@@ -6,9 +6,9 @@ $(function() {
     $("html, body").animate({ scrollTop: dn }, 500);
   });
 });
-$(".basket__item").each((ndx, item) => {
+$(".cart__item").each((ndx, item) => {
   $(item)
-    .children(".basket__close")
+    .children(".cart__close")
     .on("click", () => {
       $(item).animate({ height: 0 }, 500, function() {
         $(item).remove();
@@ -36,55 +36,55 @@ $(".calculator__vars").each((ndx, item) => {
       }
     });
 });
-$(".orders__content")
+$(".personal-orders__content")
   .hide()
   .css({
     height: "0"
   });
-$(".orders__item").each((ndx, item) => {
+$(".personal-orders__item").each((ndx, item) => {
   $(item)
-    .children(".orders__header")
-    .children(".orders__details")
+    .children(".personal-orders__header")
+    .children(".personal-orders__details")
     .on("click", e => {
       console.log("ggg");
       e.preventDefault;
       if (
         $(item)
-          .children(".orders__content")
+          .children(".personal-orders__content")
           .height() > 0
       ) {
         $(item)
-          .children(".orders__content")
+          .children(".personal-orders__content")
           .hide(500, function() {
             $(item)
-              .children(".orders__content")
+              .children(".personal-orders__content")
               .css({
                 height: "0"
               });
           });
         $(item)
-          .children(".orders__header")
-          .children(".orders__details")
+          .children(".personal-orders__header")
+          .children(".personal-orders__details")
           .css({
             transform: "rotate(0deg)"
           });
       }
       if (
         $(item)
-          .children(".orders__content")
+          .children(".personal-orders__content")
           .height() === 0
       ) {
         $(item)
-          .children(".orders__content")
+          .children(".personal-orders__content")
           .css({
             height: "auto"
           });
         $(item)
-          .children(".orders__content")
+          .children(".personal-orders__content")
           .show(500);
         $(item)
-          .children(".orders__header")
-          .children(".orders__details")
+          .children(".personal-orders__header")
+          .children(".personal-orders__details")
           .css({
             transform: "rotate(-90deg)"
           });

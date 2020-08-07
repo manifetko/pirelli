@@ -1,5 +1,5 @@
 $(function() {
-  $(".overlay-form").submit(function(e) {
+  $(".modal-form").submit(function(e) {
     var $form = $(this);
     $.ajax({
       type: $form.attr("method"),
@@ -7,16 +7,16 @@ $(function() {
       data: $form.serialize()
     })
       .done(function() {
-        $(".overlay-form").css({
+        $(".modal-form").css({
           display: "none"
         });
-        createOverlay();
+        createModal();
       })
       .fail(function() {
-        $(".overlay-form").css({
+        $(".modal-form").css({
           display: "none"
         });
-        createOverlay("error");
+        createModal("error");
       });
     e.preventDefault();
   });
@@ -31,10 +31,10 @@ $(function() {
       data: $form.serialize()
     })
       .done(function() {
-        createOverlay();
+        createModal();
       })
       .fail(function() {
-        createOverlay("error");
+        createModal("error");
       });
     e.preventDefault();
   });

@@ -125,21 +125,21 @@
 		<path d="M10.689 15.6189L12.8463 20.2724" stroke="#333333" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
 		<path d="M4.14539 1.49438L6.3031 6.14787" stroke="#333333" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
 	</symbol>
-	<symbol id="orders" fill="none">
+	<symbol id="personal-orders" fill="none">
 <path d="M13 19.8708L17.7418 15.1277" stroke="#333333" stroke-width="1.76" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M13 10L17.7418 14.7424" stroke="#333333" stroke-width="1.76" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M14.5 27C21.4036 27 27.0001 21.4036 27.0001 14.5C27.0001 7.59642 21.4036 2 14.5 2C7.59646 2 2 7.59642 2 14.5C2 21.4036 7.59646 27 14.5 27Z" stroke="#333333" stroke-width="2.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 	</symbol>
-	<symbol id="overlay-success" fill="none">
+	<symbol id="modal-success" fill="none">
 		<path d="M23.9713 3.69672C23.1287 2.66059 21.8445 1.99915 20.4049 1.99915H5.59601C3.05759 1.99915 1 4.05682 1 6.59524V21.4041C1 23.9425 3.05759 26 5.59601 26H20.4049C22.9434 26 25.0009 23.9425 25.0009 21.4041V14.3301V11.6721" stroke="#309B27" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
 		<path d="M32.35 1L11.8955 17.6695L7.44897 12.7275" stroke="#309B27" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
 	</symbol>
-	<symbol id="overlay-error" fill="none">
+	<symbol id="modal-error" fill="none">
 		<path d="M13.5 26C20.4036 26 26.0001 20.4036 26.0001 13.5C26.0001 6.59642 20.4036 1 13.5 1C6.59646 1 1 6.59642 1 13.5C1 20.4036 6.59646 26 13.5 26Z" stroke="#CE1348" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
 		<path d="M13.5002 7.4758V6.62939" stroke="#CE1348" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
 		<path d="M13.5002 20.3702V10.9259" stroke="#CE1348" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
 	</symbol>
-	<symbol id="basket-close" fill="none">
+	<symbol id="cart-close" fill="none">
 <path d="M12.1284 16.8708L16.8702 12.1277" stroke="#333333" stroke-width="1.76" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M12.1284 12.1284L16.8702 16.8709" stroke="#333333" stroke-width="1.76" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M14.5 27C21.4036 27 27.0001 21.4036 27.0001 14.5C27.0001 7.59642 21.4036 2 14.5 2C7.59646 2 2 7.59642 2 14.5C2 21.4036 7.59646 27 14.5 27Z" stroke="#333333" stroke-width="2.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>

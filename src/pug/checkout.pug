@@ -5,7 +5,7 @@ html(lang="en")
         meta(charset="utf-8")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible" content="ie=edge")
-        link(href="./main.min.css" type="text/css" rel="stylesheet")
+        link(href="./styles.min.css" type="text/css" rel="stylesheet")
     body
         div(class="wrapper")
             include ./blocks/header.pug
@@ -13,23 +13,23 @@ html(lang="en")
                 main(class="container__content")
                     h2(class="container__heading") Оформление заказа
                     div(class="checkout")
-                        ul(class="orders__content-list")
-                            li(class="orders__content-item")
-                                h3(class="orders__heading") Зимние шины Michelin X-Ice 3 185/65 R15 92T XL
-                                span(class="orders__info-style")  4шт
-                                span(class="orders__info-style")  3 762.85 руб.
-                            li(class="orders__content-item")
-                                h3(class="orders__heading") Зимние шины Michelin X-Ice 3 185/65 R15 92T XL
-                                span(class="orders__info-style")  4шт
-                                span(class="orders__info-style")  3 762.85 руб.
-                            li(class="orders__content-item")
-                                h3(class="orders__heading") Зимние шины Michelin X-Ice 3 185/65 R15 92T XL
-                                span(class="orders__info-style")  4шт
-                                span(class="orders__info-style")  3 762.85 руб.
-                            li(class="orders__content-item")
-                                h3(class="orders__heading") Зимние шины Michelin X-Ice 3 185/65 R15 92T XL
-                                span(class="orders__info-style")  4шт
-                                span(class="orders__info-style")  3 762.85 руб.
+                        ul(class="personal-orders__content-list")
+                            li(class="personal-orders__content-item")
+                                h3(class="personal-orders__heading") Зимние шины Michelin X-Ice 3 185/65 R15 92T XL
+                                span(class="personal-orders__info-style")  4шт
+                                span(class="personal-orders__info-style")  3 762.85 руб.
+                            li(class="personal-orders__content-item")
+                                h3(class="personal-orders__heading") Зимние шины Michelin X-Ice 3 185/65 R15 92T XL
+                                span(class="personal-orders__info-style")  4шт
+                                span(class="personal-orders__info-style")  3 762.85 руб.
+                            li(class="personal-orders__content-item")
+                                h3(class="personal-orders__heading") Зимние шины Michelin X-Ice 3 185/65 R15 92T XL
+                                span(class="personal-orders__info-style")  4шт
+                                span(class="personal-orders__info-style")  3 762.85 руб.
+                            li(class="personal-orders__content-item")
+                                h3(class="personal-orders__heading") Зимние шины Michelin X-Ice 3 185/65 R15 92T XL
+                                span(class="personal-orders__info-style")  4шт
+                                span(class="personal-orders__info-style")  3 762.85 руб.
                         form(class="form")
                             div(class="form-content")
                                 ul(class="form__part")
@@ -67,32 +67,32 @@ html(lang="en")
                                     li(class="form__item form__select-wrapper")
                                         label(class="form__label") Способ Оплаты:
                                         select(type="text" class="form__input")
-                            ul(class="orders__footer")
-                                li(class="orders__info") Стоимость товара:
+                            ul(class="personal-orders__footer")
+                                li(class="personal-orders__info") Стоимость товара:
                                     span(class="orders__info-style") 3 762.85 руб.
-                                li(class="orders__info") Стоимость доставки:
+                                li(class="personal-orders__info") Стоимость доставки:
                                     span(class="orders__info-style") 3 762.85 руб.
-                                li(class="orders__info") Итого:
-                                    span(class="orders__info-style") 262.85 руб.
+                                li(class="personal-orders__info") Итого:
+                                    span(class="personal-orders__info-style") 262.85 руб.
                                 li()
                                     button(class="btn") ОФОРМИТЬ
             include ./blocks/footer.pug
-        include ./blocks/overlay-login.pug
-        script(type="template" id="overlayTemplate") 
-            div(class="overlay")
-                div(class="overlay__window")
-                    div(class="overlay__header")
-                        div(class="overlay__header-success")
+        include ./blocks/modal-login.pug
+        script(type="template" id="modalTemplate") 
+            div(class="modal")
+                div(class="modal__window")
+                    div(class="modal__header")
+                        div(class="modal__header-success")
                             svg(width="34" height="27" viewBox="0 0 34 27")
-                                use(xlink:href="./imgs/sprites.svg#overlay-success")
-                            h3(class="overlay__heading") Успешно
-                        div(class="overlay__header-error")
+                                use(xlink:href="./imgs/icons/sprites.svg#modal-success")
+                            h3(class="modal__heading") Успешно
+                        div(class="modal__header-error")
                             svg(width="27" height="27" viewBox="0 0 27 27")
-                                use(xlink:href="./imgs/sprites.svg#overlay-error")
-                            h3(class="overlay__heading") Внимание!
-                    div(class="overlay__message")
-                        div(class="overlay__message-text")
-                        div(class="overlay__btns")
-                            button(class="btn btn-cancel overlay__btn") Отмена
-                            button(class="btn overlay__btn") ок
-        script(src="./main.min.js" type="text/javascript")
+                                use(xlink:href="./imgs/icons/sprites.svg#modal-error")
+                            h3(class="modal__heading") Внимание!
+                    div(class="modal__message")
+                        div(class="modal__message-text")
+                        div(class="modal__btns")
+                            button(class="btn btn-cancel modal__btn") Отмена
+                            button(class="btn modal__btn") ок
+        script(src="./scripts.min.js" type="text/javascript")

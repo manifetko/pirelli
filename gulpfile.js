@@ -18,7 +18,7 @@ task("html", () => {
 const libs = ["node_modules/jquery/dist/jquery.js", "./src/js/*.js"];
 task("scripts", () => {
   return src(libs)
-    .pipe(concat("main.min.js"))
+    .pipe(concat("scripts.min.js"))
     .pipe(
       babel({
         presets: ["@babel/env"]
@@ -30,7 +30,7 @@ task("scripts", () => {
 task("styles", () => {
   return src("src/sass/main.scss")
     .pipe(sass().on("error", sass.logError))
-    .pipe(concat("main.min.css"))
+    .pipe(concat("styles.min.css"))
     .pipe(autoprefixer())
     .pipe(gcmq())
     .pipe(cleanCSS())
