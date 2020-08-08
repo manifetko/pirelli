@@ -1,4 +1,4 @@
-const { src, dest, task, series, watch } = require("gulp");
+const { src, dest, task, series, watch, parallel } = require("gulp");
 const sass = require("gulp-sass");
 const gcmq = require("gulp-group-css-media-queries");
 const cleanCSS = require("gulp-clean-css");
@@ -46,4 +46,4 @@ task("server", () => {
 watch("./src/js/*.js", series("scripts")).on("change", reload);
 watch("./src/pug/**/*.pug", series("html")).on("change", reload);
 watch("./src/sass/**/*.scss", series("styles")).on("change", reload);
-task("default", series("styles", "scripts", "html", "server"));
+task("default", series(parallel("styles", "scripts", "html"), "server"));

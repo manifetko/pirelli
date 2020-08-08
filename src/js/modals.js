@@ -96,3 +96,16 @@ $(".login").on("click", () => {
     width: "100%"
   });
 });
+$(".modal__close").on("click", () => {
+  $(".modal-login").fadeOut(500, function() {
+    $(".modal-form__window").fadeOut(500);
+  });
+  $(".modal-form").fadeOut(500, function() {
+    $(".modal-form__window").fadeOut(500);
+  });
+  $("body").css({
+    overflow: "unset",
+    position: "relative",
+    width: "auto"
+  });
+});

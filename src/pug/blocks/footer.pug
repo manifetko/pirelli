@@ -37,57 +37,36 @@ footer(class="footer")
                             svg(width="23" height="22" viewBox="0 0 23 22")
                                 use(xlink:href="./imgs/icons/sprites.svg#youtube")
                 div(class="footer__copyright") © 2020 Все права защищены. ДонШина - продажа шин, резины и дисков на авто.
-div(style="display:none" class="breadcrumbs")
-    ol(itemscope itemtype="https://schema.org/BreadcrumbList")
+ul(itemscope itemtype="https://schema.org/BreadcrumbList")
+    li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+        a(itemprop="item" href="https://manifetko.github.io/dist/")
+            span(itemprop="name") Главная
+        meta(itemprop="position" content="0")
+    li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+        a(itemprop="item" href="https://manifetko.github.io/dist/search-results.html")
+            span(itemprop="name") Результаты поиска
+        meta(itemprop="position" content="1")
+    li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+        a(itemprop="item" href="https://manifetko.github.io/dist/search-model.html")
+            span(itemprop="name") Модель из поиска
+        meta(itemprop="position" content="2")
+    li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+        a(itemprop="item" href="https://manifetko.github.io/dist/personal-orders.html")
+            span(itemprop="name") Заказы
+        meta(itemprop="position" content="1")
+    li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+        a(itemprop="item" href="https://manifetko.github.io/dist/brand.html")
+            span(itemprop="name") Pirelli
+        meta(itemprop="position" content="1")
         li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
-            a(itemprop="item" href="https://manifetko.github.io/dist/")
-                span(itemprop="name") Главная
-            meta(itemprop="position" content="0")
-        li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
-            a(itemprop="item" href="https://manifetko.github.io/dist/search-results.html")
-                span(itemprop="name") Результаты поиска
-            meta(itemprop="position" content="1")
-        li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
-            a(itemprop="item" href="https://manifetko.github.io/dist/search-model.html")
-                span(itemprop="name") Модель из поиска
-            meta(itemprop="position" content="2")
-    ol(style="display:none" itemscope itemtype="https://schema.org/BreadcrumbList")
-        li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
-            a(itemprop="item" href="https://manifetko.github.io/dist/")
-                span(itemprop="name") Главная
-            meta(itemprop="position" content="0")
-        li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
-            a(itemprop="item" href="https://manifetko.github.io/dist/brand.html")
-                span(itemprop="name") Pirelli
-            meta(itemprop="position" content="1")
-    ol(style="display:none" itemscope itemtype="https://schema.org/BreadcrumbList")
-        li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
-            a(itemprop="item" href="https://manifetko.github.io/dist/")
-                span(itemprop="name") Главная
-            meta(itemprop="position" content="0")
-        li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
-            a(itemprop="item" href="https://manifetko.github.io/dist/cart.html")
-                span(itemprop="name") Корзина
-            meta(itemprop="position" content="1")
-        li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
-            a(itemprop="item" href="https://manifetko.github.io/dist/checkout.html")
-                span(itemprop="name") Оформление заказа
-            meta(itemprop="position" content="2")
-    ol(style="display:none" itemscope itemtype="https://schema.org/BreadcrumbList")
-        li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
-            a(itemprop="item" href="https://manifetko.github.io/dist/")
-                span(itemprop="name") Главная
-            meta(itemprop="position" content="0")
-        li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
-            a(itemprop="item" href="https://manifetko.github.io/dist/registration.html")
-                span(itemprop="name") Регистрация
-            meta(itemprop="position" content="1")
-    ol(style="display:none" itemscope itemtype="https://schema.org/BreadcrumbList")
-        li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
-            a(itemprop="item" href="https://manifetko.github.io/dist/")
-                span(itemprop="name") Главная
-            meta(itemprop="position" content="0")
-        li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
-            a(itemprop="item" href="https://manifetko.github.io/dist/personal-orders.html")
-                span(itemprop="name") Заказы
-            meta(itemprop="position" content="1")
+        a(itemprop="item" href="https://manifetko.github.io/dist/cart.html")
+            span(itemprop="name") Корзина
+        meta(itemprop="position" content="1")
+    li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+        a(itemprop="item" href="https://manifetko.github.io/dist/checkout.html")
+            span(itemprop="name") Оформление заказа
+        meta(itemprop="position" content="2")
+    li(itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem")
+        a(itemprop="item" href="https://manifetko.github.io/dist/registration.html")
+            span(itemprop="name") Регистрация
+        meta(itemprop="position" content="1")

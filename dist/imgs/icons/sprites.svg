@@ -139,7 +139,7 @@
 		<path d="M13.5002 7.4758V6.62939" stroke="#CE1348" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
 		<path d="M13.5002 20.3702V10.9259" stroke="#CE1348" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
 	</symbol>
-	<symbol id="cart-close" fill="none">
+	<symbol id="close" fill="none">
 <path d="M12.1284 16.8708L16.8702 12.1277" stroke="#333333" stroke-width="1.76" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M12.1284 12.1284L16.8702 16.8709" stroke="#333333" stroke-width="1.76" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M14.5 27C21.4036 27 27.0001 21.4036 27.0001 14.5C27.0001 7.59642 21.4036 2 14.5 2C7.59646 2 2 7.59642 2 14.5C2 21.4036 7.59646 27 14.5 27Z" stroke="#333333" stroke-width="2.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>

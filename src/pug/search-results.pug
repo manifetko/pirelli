@@ -33,7 +33,7 @@ html(lang="en")
                                     div(class="form__label") Сезонность
                                     div(class="form__select-wrapper")
                                         select(class="form__select")
-                            a(href="./results.html" class="btn btn-search") Искать
+                            a(href="./search-results.html" class="btn btn-search") Искать
                         div(class="search__result")
                             div(class="search__result-header")
                                 h1(class="search__result-heading") Результаты поиска (8)
@@ -128,7 +128,9 @@ html(lang="en")
             include ./blocks/footer.pug
         form(class="modal-form")
             div(class="modal-form__window")
-                div(class="modal-form__heading") Быстрый заказ
+                div(class="modal-form__heading") Быстрый заказ 
+                    svg(class="modal__close" width="29" height="29" viewBox="0 0 29 29")
+                        use(xlink:href="./imgs/icons/sprites.svg#close")
                 div(class="modal-form__content")
                     h1(class="modal-form__tires-name") Зимние шины Michelin X-Ice North 4 195/65 R15 95T XL
                     div(class="calculator")
